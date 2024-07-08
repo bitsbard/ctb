@@ -6,17 +6,17 @@ This model implements a deep reinforcement learning (RL) agent to trade Ethereum
 
 ### Imports and API Keys Setup
 
-- The script starts by importing various libraries essential for data manipulation (`pandas`, `numpy`), machine learning (`tensorflow.keras`), and trading (`cryptocompare`, `alpaca`).
+- The notebook starts by importing various libraries essential for data manipulation (`pandas`, `numpy`), machine learning (`tensorflow.keras`), and trading (`cryptocompare`, `alpaca`).
 - API keys for `cryptocompare` and `Alpaca` are set up to fetch historical price data and enable trading functionalities.
 
 ### Fetch Historical Data
 
-- The script fetches historical hourly price data for ETH from `cryptocompare` and cleans unwanted values (e.g., `conversionType`, `conversionSymbol`).
+- The notebook fetches historical hourly price data for ETH from `cryptocompare` and cleans unwanted values (e.g., `conversionType`, `conversionSymbol`).
 - This cleaned data is then saved to a CSV file, `eth_1_year_data.csv`.
 
 ### Calculate Simple Moving Averages (SMA)
 
-- The script calculates 50-period and 20-period SMAs based on the historical closing prices and adds these SMAs to the CSV.
+- The notebook calculates 50-period and 20-period SMAs based on the historical closing prices and adds these SMAs to the CSV.
 - Rows with NaN values resulting from SMA calculations are dropped to ensure clean data for model training.
 
 ### Data Preprocessing
@@ -48,12 +48,12 @@ This model implements a deep reinforcement learning (RL) agent to trade Ethereum
 
 ### Output
 
-- The script prints the predicted ETH price, current ETH price, and prediction error.
+- The notebook prints the predicted ETH price, current ETH price, and prediction error.
 - Debug statements print shapes of arrays used in state representation to ensure correctness.
 
 ### Detailed Explanation of Debug Messages
 
-During execution, the script prints debug messages to verify the shapes of arrays used to represent the state of the trading environment. Here’s an explanation of what these shapes mean:
+During execution, the notebook prints debug messages to verify the shapes of arrays used to represent the state of the trading environment. Here’s an explanation of what these shapes mean:
 
 1. **`window_data shape: (2, 9)`**:
    - `window_data` contains historical market data over a certain lookback window.
