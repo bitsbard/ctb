@@ -2,7 +2,7 @@
 
 ![Figure_1](https://github.com/bitsbard/ctb/assets/114309008/2c1182a1-af2f-41ee-b76e-c8490dc97132)
 
-This script implements a deep reinforcement learning (RL) agent to trade Ethereum (ETH) using historical price data. It combines a Long Short-Term Memory (LSTM) model with attention mechanisms for price prediction and a deep Q-learning network for trading decisions. Here's a comprehensive breakdown of the code and its components:
+This model implements a deep reinforcement learning (RL) agent to trade Ethereum (ETH) using historical price data. It combines a Long Short-Term Memory (LSTM) model with attention mechanisms for price prediction and a deep Q-learning network for trading decisions. Here's a comprehensive breakdown of the code and its components:
 
 ### Imports and API Keys Setup
 
